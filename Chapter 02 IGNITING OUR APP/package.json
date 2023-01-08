@@ -1,0 +1,27 @@
+{
+  "name": "chapter-02-igniting-our-app",
+  "version": "1.0.0",
+  "description": "IGNITING our REact aPp",
+  "scripts": {
+    "test": "\"jest\"",
+    "git": "https://github.com/ram798/Namaste-React.git",
+    "start": "parcel ignite.html",
+    "build": "parcel build ignite.html"
+  },
+  "keywords": [
+    "Igniting",
+    "our",
+    "app"
+  ],
+  "author": "Ram",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "browserslist": "[last 2 chrome versions]"
+  }
+}

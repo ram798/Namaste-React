@@ -1,3 +1,7 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+
 const inception = document.createElement("h1");
 inception.innerHTML = "This is my HEllo WoRlD!!";
 const branch = document.getElementById("fight");
