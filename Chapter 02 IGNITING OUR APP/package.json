@@ -15,6 +15,7 @@
   "author": "Ram",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.20.12",
     "babel-plugin-transform-remove-console": "^6.9.4",
     "parcel": "^2.8.2",
     "process": "^0.11.10"
