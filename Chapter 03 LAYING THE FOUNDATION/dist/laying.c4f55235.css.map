@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;AAIA;;;;AAIA","sources":["laying.css"],"sourcesContent":["* {\r\n    background-color: rgb(212, 245, 245);\r\n}\r\n\r\n#flight  {\r\n    color: orange;\r\n}\r\n\r\n#fight {\r\n    color: brown;\r\n}\r\n"],"names":[],"version":3,"file":"laying.c4f55235.css.map","sourceRoot":"/__parcel_source_root/"}
