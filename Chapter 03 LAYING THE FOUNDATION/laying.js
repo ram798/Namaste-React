@@ -48,6 +48,7 @@ const roar = ReactDOM.createRoot(document.getElementById("rope"));
 roar.render(<FunctionalComponent/>);
 
 //search -bar
+//check this again. Need Clarification(copied)
 const SearchComponent = () => {
     return (
       <input
@@ -70,3 +71,4 @@ const SearchComponent = () => {
   };
   const root = ReactDOM.createRoot(document.getElementById("root"));
   root.render(<MainComponent />);
+
