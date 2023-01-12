@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { IconName } from "react-icons/fa";
-import logo from './logo.png';
-
+import {logo} from './logo.png';
 
 
 //Nested header element using React.createElement
@@ -27,28 +26,41 @@ const newHeader =(
 const roops = ReactDOM.createRoot(document.getElementById("mane"));
 roops.render(newHeader);
 
-const Attribute = <h3 id="plus" key= "seven"> Hell BOY</h3>
-const Rise = () =>(<h4> {key="eight"}, "Dont Overthink"</h4>);
+const AttributeComp = <h3 id="plus" key= "seven"> Hell BOY</h3>
+const lover = ReactDOM.createRoot(document.getElementById("lover"));
+// lover.render(Attribute);
 
+const RiseBoy = () =>(<h4>  "Dont Overthink"</h4>);
+const love = ReactDOM.createRoot(document.getElementById("love"));
+// love.render(<Rise/>);
 
+const new1 =(
+  <div className="titler">
+  <h1 id="jsx1" key= "lbw"> "BE Healthy" </h1>
+  <h2 id="jsx2" key= "free"> "BE WOrk hoLic" </h2>
+  <h3 id="jsx3" key= "hit"> "BE Excited" </h3>
+  </div>
+);
+// const seeta = ReactDOM.createRoot(document.getElementById("pooja"));
+// seeta.render(newHeader1);
 
 //functional component
 
 const FunctionalComponent = () =>{
     return(
-        <div className="title">
-            {newHeader}
+        <div >
+             {new1}
             <h2>Namaste React BHAI</h2>
-            <Attribute/>
-            <Rise/>
+            {<RiseBoy/>}
+            {AttributeComp}
         </div>
     );
 };
 const roar = ReactDOM.createRoot(document.getElementById("rope"));
 roar.render(<FunctionalComponent/>);
 
-//search -bar
-//check this again. Need Clarification(copied)
+// search -bar
+// check this again. Need more Clarity
 const SearchComponent = () => {
     return (
       <input

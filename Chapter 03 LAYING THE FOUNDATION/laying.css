@@ -1,0 +1,28 @@
+* {
+    background-color: rgb(212, 245, 245);
+}
+
+#flight  {
+    color: orange;
+}
+
+#fight {
+    color: brown;
+}
+
+.titler{
+    color: brown;
+}
+
+.search {
+    width: 20rem;
+    background: #f0f0f0;
+    border: none;
+    padding: 0.5rem;
+  }
+
+  .main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
