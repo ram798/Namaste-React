@@ -1,2 +1,2 @@
 # Namaste-React
- Learning React from AKshay SAini 
+ Visiting React with AKshay SAini 
