@@ -1,0 +1,44 @@
+* {
+    background-color: rgb(212, 245, 245);
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border: 1px solid black;
+}
+.nav-items > ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-items >ul >li {
+    padding: 10px;
+}
+
+.logo{
+    width: 150px;
+}
+
+.card{
+    width: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    text-overflow: ellipsis;
+}
+
+.card > img {
+    width: 100%;
+
+}
+
+.restraunt-list {
+    display: flex;
+    flex-wrap: wrap;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: wrap;
+}
