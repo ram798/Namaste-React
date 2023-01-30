@@ -1,0 +1,29 @@
+{
+  "name": "dry",
+  "version": "1.0.0",
+  "description": "THis is a Multi cuisine restaurant",
+  "main": "dawat.js",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel dawat.html",
+    "build": "parcel build dawat.html"
+  },
+  "keywords": [
+    "mandi",
+    "restaurant",
+    "food"
+  ],
+  "author": "LAD",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  }
+}

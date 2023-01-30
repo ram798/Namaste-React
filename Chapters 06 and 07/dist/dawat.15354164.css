@@ -1,0 +1,54 @@
+.header {
+  border: 1px solid #000;
+  justify-content: space-between;
+  margin: 10px;
+  display: flex;
+}
+
+.nav-items > ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+}
+
+.card {
+  width: 200px;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.card > img {
+  width: 100%;
+}
+
+.restaurant-list {
+  overflow-wrap: normal;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.shimmer-card {
+  width: 200px;
+  height: 200px;
+  background-color: #add8e6;
+  margin: 20px;
+}
+
+.cake {
+  width: 350px;
+  height: 350px;
+}
+
+.menu {
+  display: flex;
+}
+
+/*# sourceMappingURL=dawat.15354164.css.map */
