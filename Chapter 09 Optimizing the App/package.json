@@ -1,0 +1,33 @@
+{
+  "name": "react-demo",
+  "version": "1.0.0",
+  "description": "This is my App",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ram798/Namaste-React.git"
+  },
+  "keywords": [
+    "App",
+    "optimize"
+  ],
+  "author": "Kittu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ram798/Namaste-React/issues"
+  },
+  "homepage": "https://github.com/ram798/Namaste-React#readme",
+  "devDependencies": {
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.0"
+  }
+}
