@@ -1,16 +1,16 @@
 import React ,{lazy, Suspense}from "react";
 import ReactDOM from "react-dom/client";
-import Header from "./components/Header";
-import Body from "./components/Body";
-import Footer from "./components/Footer";
+import Header from "./src/components/Header";
+import Body from "./src/components/Body";
+import Footer from "./src/components/Footer";
 import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
-import Divein from "./components/Divein";
-import Error from "./components/Error";
-import Diveout from "./components/Diveout";
-import RestaurantMenu from "./components/RestaurantMenu";
-import Shimmer from "./components/Shimmer";
+import Divein from "./src/components/Divein";
+import Error from "./src/components/Error";
+import Diveout from "./src/components/Diveout";
+import RestaurantMenu from "./src/components/RestaurantMenu";
+import Shimmer from "./src/components/Shimmer";
 
-const Instamart = lazy(() => import("./components/Instamart"));
+const Instamart = lazy(() => import("./src/components/Instamart"));
 const AppLayout = () => {
     return(
      <>   

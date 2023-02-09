@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { IMG_CDN_URL } from "../config";
-import useRestaurant from "../customHooks/useRestaurant";
+import { IMG_CDN_URL } from "../../config";
+import useRestaurant from "../../customHooks/useRestaurant";
 import Shimmer from "./Shimmer";
 
 const RestaurantMenu = () => {
