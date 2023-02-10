@@ -1,11 +1,11 @@
 import { RestaurantList } from "../../config";
 import RestaurantCard from "./RestaurantCard";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Shimmer from "./Shimmer";
 import {Link} from "react-router-dom";
 import { filterData } from "../../utils/helper";
 import useOnline from "../../customHooks/useOnline";
-
+import UserContext from "../../utils/UserContext";
 // const filterData = (searchTxt,restaurants) => {
 //     restaurants.filter((restaurant) => 
 //      restaurant?.data?.name.includes(searchTxt))
@@ -24,7 +24,7 @@ const Body = () => {
     const [allRestaurants, setAllRestaurants] = useState([]);
     const [filteredRestaurants, setFilteredRestaurants] = useState([]);
     const [searchTxt,setSearchTxt] = useState("");
-
+    const {user,setUser} = useContext(UserContext);
     // const [searchClicked,setSearchClicked] = useState("false");
     
 
@@ -90,6 +90,19 @@ const Body = () => {
          
         }}>
             Search</button>
+            <input value={user.name} onChange={
+              e => setUser({
+                ...user,
+                name: e.target.value,
+              })
+            }>
+          </input>
+          <input value={user.email} onChange={
+            e => setUser({
+              ...user,
+              email: "newemail@gmail.com",
+            })
+          }></input>
         </div>
 
         <div className="flex flex-wrap">
@@ -98,7 +111,7 @@ const Body = () => {
                <Link 
                to={"/restaurant/" + restaurant.data.id} 
                key={restaurant.data.id}>
-                 <RestaurantCard{...restaurant.data}/>
+                 <RestaurantCard{...restaurant.data} user={user}/>
                  </Link>);            
         })}
         

@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 // import Logo from "../assets/img/Swiggy.png";
 import useOnline from "../../customHooks/useOnline";
+import UserContext from "../../utils/UserContext";
 
 const loggedInUser = () => {
     //API call to check user
@@ -17,10 +18,14 @@ const Title = () =>(
 
 const Header = () => {
    const isOnline = useOnline();
+
     const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+    const {user} = useContext(UserContext);
+
     return(
 
-        <div className="flex justify-between sm-bg-pink-50 shadow-lg bg-blue-400 ">
+        <div className="flex justify-between sm-bg-pink-50 shadow-lg bg-pink-50 ">
             <Title/>
 
             
@@ -36,10 +41,12 @@ const Header = () => {
         </ul>
         </div>
         <h1>{isOnline ? "🔰" : "🍎"}</h1>
-        {
-            isLoggedIn ? (
+        <span className="p-10 font-bold text-red-400"> {user.name} </span>
+        
+           { isLoggedIn ? (
             <button onClick={() => setIsLoggedIn(false)}>Logout</button> 
-             ) : ( <button onClick={() => setIsLoggedIn(true)}>Login</button>
+             ) : ( 
+            <button onClick={() => setIsLoggedIn(true)}>Login</button>
        )}
         
         
